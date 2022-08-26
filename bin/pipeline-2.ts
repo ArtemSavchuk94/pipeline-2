@@ -4,12 +4,12 @@ import * as cdk from 'aws-cdk-lib';
 import { Pipeline2Stack } from '../lib/pipeline-2-stack';
 
 const app = new cdk.App();
-const mainStack = new Pipeline2Stack(app, 'mainStack',{
+const mainStack = new Pipeline2Stack(app, 'main-pipeline2',{
   branchName:'main',
-  stackName:'mainStack',
+  stackName:'main-pipeline2',
 });
 
-const devStack = new Pipeline2Stack(app, 'devStack',{
+const devStack = new Pipeline2Stack(app, 'dev-pipeline2',{
   branchName:'dev',
-  stackName:'devStack',
+  stackName:'dev-pipeline2',
 });
